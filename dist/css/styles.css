@@ -1,0 +1,301 @@
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;700&family=Inter:wght@400;700&display=swap");
+:root {
+  --color-primary-light: #284260;
+  --color-secondary-light: #6E859F;
+  --color-primary-dark: #D7F9FF;
+  --color-secondary-dark: #D7F9FF;
+  --background-color-light: #FFF;
+  --background-color-dark: #01080E;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+footer {
+  text-align: center;
+  margin: 10rem 0 0.5rem 0;
+  color: var(--color-secondary-light);
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  font-family: "Chakra Petch", sans-serif;
+  margin: 3rem 9rem;
+  background-color: var(--background-color-light);
+  color: var(--color-primary-light);
+}
+
+h1 {
+  color: var(--color-primary-light);
+  font-size: 24px;
+  font-weight: 700;
+  margin-left: 1.5rem;
+}
+
+.project-header {
+  display: flex;
+  margin-top: 5rem;
+}
+.project-header .project-title-tools, .project-header .project-image {
+  width: 49%;
+}
+.project-header .project-title-tools {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.project-header .project-title-tools h2 {
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--color-secondary-light);
+}
+.project-header .project-image img {
+  max-width: 608px;
+}
+.project-header .tools {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.project-header .tools span {
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Inter", sans-serif;
+  color: var(--color-secondary-light);
+}
+.project-header .frameworks {
+  display: flex;
+  gap: 14px;
+  font-weight: 700;
+  color: #1CA7C8;
+  font-family: "Inter", sans-serif;
+}
+.project-header .frameworks p {
+  border: 1px solid #1CA7C8;
+  border-radius: 4px;
+  padding: 8px 12px;
+}
+
+.project-description {
+  color: var(--color-secondary-light);
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  margin-top: 4rem;
+}
+
+.project-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 6rem;
+}
+.project-buttons a {
+  padding: 16px 28px;
+  align-items: center;
+  border-radius: 100px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Inter", sans-serif;
+}
+.project-buttons .github {
+  background-color: #1CA7C8;
+}
+.project-buttons .live-project {
+  background: linear-gradient(90deg, #8C61D5 0%, #1CA7C8 100%);
+}
+
+.header .title {
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.perfil {
+  text-align: center;
+  margin-top: 5rem;
+}
+.perfil img {
+  max-width: 224px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid var(--color-primary);
+}
+.perfil h3 {
+  margin: 15px;
+  color: #1CA7C8;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  gap: 20px;
+}
+.about p {
+  color: var(--color-secondary-light);
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  width: 45%;
+}
+.about strong {
+  font-weight: bold;
+  font-size: 60px;
+}
+.about .highlight {
+  color: var(--color-primary);
+}
+.about .gradient {
+  background: linear-gradient(90deg, #8C61D5 0%, #1CA7C8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.skills {
+  text-align: center;
+  margin-top: 3rem;
+}
+.skills h2 {
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  color: var(--color-secondary-light);
+  margin-bottom: 1rem;
+}
+.skills ul {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  color: #1CA7C8;
+}
+.skills ul li {
+  border: 1px solid #1CA7C8;
+  border-radius: 4px;
+  padding: 8px 12px;
+}
+
+.divider img {
+  display: block;
+  margin: 5rem auto;
+  max-width: 100%;
+}
+
+section.projects h2 {
+  font-size: 24px;
+  color: var(--color-primary);
+  margin-bottom: 2rem;
+}
+section.projects div#project-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+section.projects div#project-list .project {
+  display: flex;
+  flex-direction: column;
+  width: 31.5%;
+  border: 1px solid #1CA7C8;
+  padding: 24px;
+  border-radius: 4px;
+  align-items: center;
+  transition: box-shadow 0.3s ease-in-out;
+}
+section.projects div#project-list .project .all-info {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+section.projects div#project-list .project .all-info a.view-project {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #1CA7C8;
+  text-decoration: none;
+}
+section.projects div#project-list .project img {
+  width: 333px;
+  height: 196px;
+  object-fit: cover;
+  max-width: -webkit-fill-available;
+}
+section.projects div#project-list .project span.name-project {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-top: 22px;
+}
+section.projects div#project-list .project .resume-project {
+  color: var(--color-secondary-light);
+  font-size: 16px;
+  font-weight: 400;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+section.projects div#project-list .project:hover {
+  box-shadow: 0px 4px 44px 0px rgba(28, 167, 200, 0.3);
+}
+
+section.contact {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 15%;
+  flex-wrap: wrap;
+}
+section.contact .text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+section.contact .text p {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1CA7C8;
+}
+section.contact .text strong {
+  font-size: 60px;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+section.contact .social {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+section.contact .social a {
+  color: var(--color-secondary-light);
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  align-items: center;
+  display: flex;
+  gap: 8px;
+}
+section.contact .social a img {
+  width: 24px;
+  height: 24px;
+}
