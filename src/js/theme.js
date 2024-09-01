@@ -6,7 +6,7 @@ function setThemeBasedOnTime() {
 
     const root = document.documentElement;
 
-    if (hour >= 5 && hour < 14) {
+    if (hour >= 5 && hour < 17) {
         root.style.setProperty('--background-color-light', '#FFF');
         root.style.setProperty('--color-primary-light', '#284260');
         root.style.setProperty('--color-secondary-light', '#6E859F');

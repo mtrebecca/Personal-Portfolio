@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const projectElement = document.createElement('div');
             projectElement.classList.add('project');
             
-            const projectImage = projectImages[repo.name] || '/src/assets/images/default-project.png';
+            const projectImage = projectImages[repo.name] || '';
 
             projectElement.innerHTML = `
                 <img src="${projectImage}" alt="${repo.name}" />

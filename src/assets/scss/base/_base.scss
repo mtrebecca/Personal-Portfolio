@@ -20,3 +20,9 @@ h1 {
     font-weight: $font-weight-bold;
     margin-left: 1.5rem;
 }
+
+@media (max-width: 1200px) {
+    body {
+        margin: 3rem;
+    }
+}

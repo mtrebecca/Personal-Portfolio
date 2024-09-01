@@ -12,13 +12,14 @@
         h2 {
             font-size: 48px;
             font-weight: $font-weight-bold;
-            color: var(--color-secondary-light);
+            color: var(--color-primary-light);
         }
     }
 
     .project-image {
         img {
             max-width: 608px;
+            width: 100%;
         }
     }
 
@@ -63,7 +64,7 @@
     justify-content: center;
     gap: 20px;
     margin-top: 6rem;
-
+    flex-wrap: wrap;
     a {
         padding: 16px 28px;
         align-items: center;
@@ -84,3 +85,22 @@
     }
 }
 
+@media (max-width: 768px) {
+    .project-header {
+        flex-direction: column;
+        gap: 20px;
+
+        .project-title-tools, 
+        .project-image {
+            width: 100%;
+            text-align: center;
+        }
+
+        .frameworks {
+            justify-content: center;
+        }
+    }
+    .project-description {
+        text-align: center;
+    }
+}
